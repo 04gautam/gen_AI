@@ -18,7 +18,7 @@ function App() {
       const userMessage = { sender: "user", text: question };
       setChat((prev) => [...prev, userMessage]);
 
-      const res = await axios.post("http://localhost:3000/ai/response", {
+      const res = await axios.post("https://gen-ai-ruby.vercel.app/ai/response", {
         data: question,
       });
 
